@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: auto grader",
+            "type": "python",
+            "request": "launch",
+            "program": "autograder.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: tiny serach",
+            "type": "python",
+            "request": "launch",
+            "program": "pacman.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-p",
+                "SearchAgent",
+                "-l",
+                "tinyMaze"
+            ]
+        },
+        {
+            "name": "Python: Q5",
+            "type": "python",
+            "request": "launch",
+            "program": "pacman.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-p",
+                "SearchAgent",
+                "-l",
+                "tinyCorners",
+                "-a",
+                "fn=bfs,prob=CornersProblem"
+            ]
+        },
+        {
+            "name": "Python: Q6",
+            "type": "python",
+            "request": "launch",
+            "program": "pacman.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-p",
+                "AStarCornersAgent",
+                "-l",
+                "mediumCorners",
+                "-z",
+                "0.5"
+            ]
+        }
+    ]
+}
